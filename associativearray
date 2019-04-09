@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>country codes</h1>
+<?php 
+
+$countrycode = array("india"=>"91", "africa"=>"95", "combodia"=>"93","usa"=>"74","japan"=>"01");
+
+$country_names=array_keys($countrycode);
+
+echo "<table style=\"border: solid 1px black\"><tr>";
+
+foreach($country_names as $country){
+    echo "<th >".$country."</th>";
+}
+
+echo "</tr><tr>";
+
+foreach($countrycode as $code){
+    echo "<td >".$code."</td>";
+}
+
+echo "</tr></table>";
+
+?>
+
+</body>
+</html>
